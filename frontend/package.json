@@ -1,0 +1,58 @@
+{
+  "name": "pokemons",
+  "private": true,
+  "description": "10 pokemons",
+  "version": "0.1.0",
+  "author": "Maxim Hafizov <maksim.hafizov.00@mail.ru>",
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@fontsource/raleway": "^4.5.0",
+    "@mui/base": "^5.0.0-alpha.66",
+    "@mui/material": "^5.3.1",
+    "@mui/styled-engine-sc": "^5.3.0",
+    "axios": "^0.25.0",
+    "d": "^1.0.1",
+    "dotenv": "^14.2.0",
+    "gatsby": "^4.5.4",
+    "gatsby-plugin-gatsby-cloud": "^4.5.2",
+    "gatsby-plugin-image": "^2.5.2",
+    "gatsby-plugin-manifest": "^4.5.2",
+    "gatsby-plugin-offline": "^5.5.2",
+    "gatsby-plugin-react-helmet": "^5.5.0",
+    "gatsby-plugin-sharp": "^4.5.2",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "gatsby-source-filesystem": "^4.5.2",
+    "gatsby-transformer-sharp": "^4.5.0",
+    "prop-types": "^15.8.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-hot-loader": "^4.13.0",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^2.0.2",
+    "prettier": "^2.5.1"
+  },
+  "keywords": [
+    "pokemons"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

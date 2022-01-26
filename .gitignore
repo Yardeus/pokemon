@@ -1,0 +1,7 @@
+/backend/build/
+/backend/.cache/
+/backend/node_modules/
+/frontend/public/
+/frontend/.cache/
+/frontend/node_modules/
+/frontend/build/

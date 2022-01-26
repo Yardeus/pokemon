@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    color: #FFFFFF;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    gap: 70px;
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: 2fr 10fr;
+    grid-template-areas: "A T" "B C";
+}
+
+.api {
+    grid-area: A;
+    border: 1px solid #FFFFFF;
+    padding: 5px;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.touch {
+    grid-area: T;
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.touch img {
+    margin-right: 5px;
+}
+
+.touch h4 {
+    width: 120px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.buttons {
+    margin-left: 150px;
+    grid-area: B;
+    justify-self: end;
+    align-self: center;
+
+
+}
+
+
+
+.chip {
+    grid-area: C;
+    justify-self: start;
+    align-self: start;
+    background-color: black;
+    width: auto;
+    min-width: 500px;
+    height: auto;
+    min-height: 500px;
+
+    display: grid;
+    align-content: start;
+    align-items: center;
+    grid-template-columns: 12fr;
+    grid-template-rows: 2fr 7fr 3fr;
+    grid-template-areas: "N" "I" "D";
+
+    padding: 30px;
+}
+
+
+.name {
+    grid-area: N;
+}
+
+.image {
+    grid-area: I;
+    justify-self: center;
+    width: 250px;
+    height: 250px;
+}
+
+.description {
+    grid-area: D;
+}
+

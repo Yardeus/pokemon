@@ -1,0 +1,42 @@
+version: "3.7"
+
+services:
+  pgdb:
+    image: postgres
+    restart: always
+    container_name: pgdb
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: pokemon
+      PGDATA: /data/postgres
+    volumes:
+    - ./pgdata:/var/lib/postgresql/data/
+    - ./initsql:/docker-entrypoint-initdb.d
+    ports:
+    - 5433:5432
+
+  backend:
+    image: yardeus/pokemon-backend
+    build: ./backend
+    container_name: backend
+    ports:
+      - 1337:1337
+    environment:
+      DATABASE_HOST: pgdb
+    restart: always
+    links:
+      - pgdb
+
+  frontend:
+    image: yardeus/pokemon-frontend
+    build: ./frontend
+    container_name: frontend
+    ports:
+    - 8001:8001
+    restart: always
+    links:
+      - backend
+
+volumes:
+  pgdata: null
