@@ -1,8 +1,10 @@
 import * as axios from "axios";
 
+export const backendUrl = 'http://89.108.77.109:1337'
+
 const instance = axios.create({
 //настройки
-    baseURL: 'http://localhost:1337/api/',
+    baseURL: backendUrl+'/api/',
 
 });
 

@@ -9,4 +9,6 @@ EXPOSE 1337
 COPY package.json ./
 RUN yarn install
 COPY . ./
-CMD yarn develop
+RUN yarn build
+
+CMD yarn start

@@ -6,7 +6,7 @@ import icon from "../images/icon.png"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Button from "@mui/material/Button";
-import {pokemonAPI} from "../api/api";
+import {backendUrl, pokemonAPI} from "../api/api";
 
 const MuiButton = styled(Button)({
     textTransform: 'lowercase;',
@@ -84,7 +84,7 @@ class IndexPage extends React.Component {
                                     </div>
 
                                     <img className={s.image} alt={p.attributes.title}
-                                         src={'http://localhost:1337' + p.attributes.image.data.attributes.url}/>
+                                         src={backendUrl + p.attributes.image.data.attributes.url}/>
 
                                     <div className={s.description}>
                                         <div>
