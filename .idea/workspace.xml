@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cff24a5-7862-4498-8396-7dc4739f280e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/.strapi-updater.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.strapi-updater.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/database.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/index.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +68,8 @@
       <workItem from="1643127522120" duration="3448000" />
       <workItem from="1643131122272" duration="16679000" />
       <workItem from="1643188328921" duration="13284000" />
-      <workItem from="1643280985199" duration="15250000" />
+      <workItem from="1643280985199" duration="15935000" />
+      <workItem from="1643625155154" duration="9473000" />
     </task>
     <servers />
   </component>

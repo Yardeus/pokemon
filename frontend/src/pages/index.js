@@ -10,25 +10,26 @@ import {backendUrl, pokemonAPI} from "../api/api";
 
 const MuiButton = styled(Button)({
     textTransform: 'lowercase;',
+    height: '60px',
+
     fontSize: 20,
-    padding: '10px',
+    padding: '20px',
     margin: '5px 3px',
     borderRadius: '44px',
     backgroundColor: '#1986EC;',
+    fontFamily: 'Raleway',
     fontStyle: 'normal',
     color: 'white',
     fontWeight: 500,
     '&:hover': {
-        backgroundColor: '#0069d9',
-        borderColor: '#0062cc',
+        backgroundColor: '#1986EC',
+
     },
     '&:active': {
-        backgroundColor: '#0062cc',
-        borderColor: '#005cbf',
+        backgroundColor: '#1986EC',
+
     },
-    '&:focus': {
-        boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
-    },
+
 });
 
 
@@ -62,12 +63,15 @@ class IndexPage extends React.Component {
                     <Seo title={'pokemon'}/>
                     <div className={s.container}>
                         <div className={s.api}>
-                            ПОКЕМОНЫ API
+                            <div className={s.api_text}>
+                                ПОКЕМОНЫ API
+                            </div>
+
                         </div>
-                        <div className={s.touch}>
+                        <div className={s.addition}>
                             <img src={icon} alt={'touch'}/>
 
-                            <h4>Нажмите на нужного Покемона</h4>
+                            <div className={s.addition_text}>Нажмите на нужного Покемона</div>
                         </div>
 
                         <div className={s.buttons}>
@@ -80,11 +84,13 @@ class IndexPage extends React.Component {
                             if (p.attributes.id_pokemon === this.state.idPokemon) {
                                 return <div className={s.chip}>
                                     <div className={s.name}>
-                                        <h1>{p.attributes.title}</h1>
+                                        {p.attributes.title}
+                                    </div>
+                                    <div  className={s.image} >
+                                        <img alt={p.attributes.title}
+                                             src={backendUrl + p.attributes.image.data.attributes.url}/>
                                     </div>
 
-                                    <img className={s.image} alt={p.attributes.title}
-                                         src={backendUrl + p.attributes.image.data.attributes.url}/>
 
                                     <div className={s.description}>
                                         <div>
