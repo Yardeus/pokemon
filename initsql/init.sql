@@ -5,7 +5,7 @@
 -- Dumped from database version 14.1
 -- Dumped by pg_dump version 14.1
 
--- Started on 2022-01-31 19:27:46
+-- Started on 2022-01-31 19:39:18
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -18,6 +18,7 @@ SET xmloption = content;
 SET client_min_messages = warning;
 SET row_security = off;
 
+DROP DATABASE pokemon;
 --
 -- TOC entry 3526 (class 1262 OID 16777)
 -- Name: pokemon; Type: DATABASE; Schema: -; Owner: postgres
@@ -1953,7 +1954,7 @@ ALTER TABLE ONLY public.up_users
     ADD CONSTRAINT up_users_updated_by_id_fk FOREIGN KEY (updated_by_id) REFERENCES public.admin_users(id) ON DELETE SET NULL;
 
 
--- Completed on 2022-01-31 19:27:46
+-- Completed on 2022-01-31 19:39:18
 
 --
 -- PostgreSQL database dump complete
