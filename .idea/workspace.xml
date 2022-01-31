@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7cff24a5-7862-4498-8396-7dc4739f280e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/index.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/initsql/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/initsql/init.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +25,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/docker_postgres_init.sql" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/initsql" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -35,18 +35,18 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\react-projects\pokemon\initsql" />
+      <recent name="C:\react-projects\pokemon\docker_postgres_init.sql" />
+      <recent name="C:\react-projects\pokemon\init.sql" />
+      <recent name="C:\react-projects\pokemon\backend" />
+      <recent name="C:\react-projects\pockemon\frontend\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\react-projects\pokemon\pgdata" />
       <recent name="C:\react-projects\pokemon" />
       <recent name="C:\react-projects\pockemon\frontend\src\images" />
       <recent name="C:\react-projects\pockemon\frontend\src\fonts" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\react-projects\pokemon\docker_postgres_init.sql" />
-      <recent name="C:\react-projects\pokemon\init.sql" />
-      <recent name="C:\react-projects\pokemon\backend" />
-      <recent name="C:\react-projects\pockemon\frontend\src" />
-      <recent name="C:\react-projects\pockemon\frontend\public\icons" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -68,6 +68,8 @@
       <workItem from="1643188328921" duration="13284000" />
       <workItem from="1643280985199" duration="15935000" />
       <workItem from="1643625155154" duration="10756000" />
+      <workItem from="1643645279582" duration="372000" />
+      <workItem from="1643645814257" duration="699000" />
     </task>
     <servers />
   </component>

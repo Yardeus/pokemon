@@ -5,7 +5,30 @@
 -- Dumped from database version 14.1
 -- Dumped by pg_dump version 14.1
 
--- Started on 2022-01-26 01:03:20
+-- Started on 2022-01-31 19:27:46
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 3526 (class 1262 OID 16777)
+-- Name: pokemon; Type: DATABASE; Schema: -; Owner: postgres
+--
+
+CREATE DATABASE pokemon WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE = 'Russian_Russia.1251';
+
+
+ALTER DATABASE pokemon OWNER TO postgres;
+
+\connect pokemon
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -59,7 +82,7 @@ CREATE SEQUENCE public.admin_permissions_id_seq
 ALTER TABLE public.admin_permissions_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3526 (class 0 OID 0)
+-- TOC entry 3527 (class 0 OID 0)
 -- Dependencies: 217
 -- Name: admin_permissions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -116,7 +139,7 @@ CREATE SEQUENCE public.admin_roles_id_seq
 ALTER TABLE public.admin_roles_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3527 (class 0 OID 0)
+-- TOC entry 3528 (class 0 OID 0)
 -- Dependencies: 221
 -- Name: admin_roles_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -167,7 +190,7 @@ CREATE SEQUENCE public.admin_users_id_seq
 ALTER TABLE public.admin_users_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3528 (class 0 OID 0)
+-- TOC entry 3529 (class 0 OID 0)
 -- Dependencies: 219
 -- Name: admin_users_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -235,7 +258,7 @@ CREATE SEQUENCE public.files_id_seq
 ALTER TABLE public.files_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3529 (class 0 OID 0)
+-- TOC entry 3530 (class 0 OID 0)
 -- Dependencies: 225
 -- Name: files_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -294,7 +317,7 @@ CREATE SEQUENCE public.i18n_locale_id_seq
 ALTER TABLE public.i18n_locale_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3530 (class 0 OID 0)
+-- TOC entry 3531 (class 0 OID 0)
 -- Dependencies: 233
 -- Name: i18n_locale_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -341,7 +364,7 @@ CREATE SEQUENCE public.pokemons_id_seq
 ALTER TABLE public.pokemons_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3531 (class 0 OID 0)
+-- TOC entry 3532 (class 0 OID 0)
 -- Dependencies: 240
 -- Name: pokemons_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -386,7 +409,7 @@ CREATE SEQUENCE public.strapi_api_tokens_id_seq
 ALTER TABLE public.strapi_api_tokens_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3532 (class 0 OID 0)
+-- TOC entry 3533 (class 0 OID 0)
 -- Dependencies: 223
 -- Name: strapi_api_tokens_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -428,7 +451,7 @@ CREATE SEQUENCE public.strapi_core_store_settings_id_seq
 ALTER TABLE public.strapi_core_store_settings_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3533 (class 0 OID 0)
+-- TOC entry 3534 (class 0 OID 0)
 -- Dependencies: 213
 -- Name: strapi_core_store_settings_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -468,7 +491,7 @@ CREATE SEQUENCE public.strapi_database_schema_id_seq
 ALTER TABLE public.strapi_database_schema_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3534 (class 0 OID 0)
+-- TOC entry 3535 (class 0 OID 0)
 -- Dependencies: 211
 -- Name: strapi_database_schema_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -507,7 +530,7 @@ CREATE SEQUENCE public.strapi_migrations_id_seq
 ALTER TABLE public.strapi_migrations_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3535 (class 0 OID 0)
+-- TOC entry 3536 (class 0 OID 0)
 -- Dependencies: 209
 -- Name: strapi_migrations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -549,7 +572,7 @@ CREATE SEQUENCE public.strapi_webhooks_id_seq
 ALTER TABLE public.strapi_webhooks_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3536 (class 0 OID 0)
+-- TOC entry 3537 (class 0 OID 0)
 -- Dependencies: 215
 -- Name: strapi_webhooks_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -591,7 +614,7 @@ CREATE SEQUENCE public.up_permissions_id_seq
 ALTER TABLE public.up_permissions_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3537 (class 0 OID 0)
+-- TOC entry 3538 (class 0 OID 0)
 -- Dependencies: 227
 -- Name: up_permissions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -648,7 +671,7 @@ CREATE SEQUENCE public.up_roles_id_seq
 ALTER TABLE public.up_roles_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3538 (class 0 OID 0)
+-- TOC entry 3539 (class 0 OID 0)
 -- Dependencies: 229
 -- Name: up_roles_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -697,7 +720,7 @@ CREATE SEQUENCE public.up_users_id_seq
 ALTER TABLE public.up_users_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3539 (class 0 OID 0)
+-- TOC entry 3540 (class 0 OID 0)
 -- Dependencies: 231
 -- Name: up_users_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -1007,16 +1030,16 @@ INSERT INTO public.admin_users_roles_links (user_id, role_id) VALUES (1, 1);
 -- Data for Name: files; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public.files (id, name, alternative_text, caption, width, height, formats, hash, ext, mime, size, url, preview_url, provider, provider_metadata, created_at, updated_at, created_by_id, updated_by_id) VALUES (1, 'bulbasaur.png', 'bulbasaur.png', 'bulbasaur.png', 96, 96, NULL, 'bulbasaur_e1e580e735', '.png', 'image/png', 0.55, '/uploads/bulbasaur_e1e580e735.png', NULL, 'local', NULL, '2022-01-21 18:36:02.422', '2022-01-21 18:36:02.422', 1, 1);
-INSERT INTO public.files (id, name, alternative_text, caption, width, height, formats, hash, ext, mime, size, url, preview_url, provider, provider_metadata, created_at, updated_at, created_by_id, updated_by_id) VALUES (2, 'squirtle.png', 'squirtle.png', 'squirtle.png', 96, 96, NULL, 'squirtle_60f62f7115', '.png', 'image/png', 0.58, '/uploads/squirtle_60f62f7115.png', NULL, 'local', NULL, '2022-01-21 18:46:45.972', '2022-01-21 18:46:45.972', 1, 1);
-INSERT INTO public.files (id, name, alternative_text, caption, width, height, formats, hash, ext, mime, size, url, preview_url, provider, provider_metadata, created_at, updated_at, created_by_id, updated_by_id) VALUES (3, '13.png', '13.png', '13.png', 96, 96, NULL, '13_8d52d804ca', '.png', 'image/png', 0.47, '/uploads/13_8d52d804ca.png', NULL, 'local', NULL, '2022-01-21 18:49:26', '2022-01-21 18:49:26', 1, 1);
-INSERT INTO public.files (id, name, alternative_text, caption, width, height, formats, hash, ext, mime, size, url, preview_url, provider, provider_metadata, created_at, updated_at, created_by_id, updated_by_id) VALUES (4, '18.png', '18.png', '18.png', 96, 96, NULL, '18_4e860c64f2', '.png', 'image/png', 0.95, '/uploads/18_4e860c64f2.png', NULL, 'local', NULL, '2022-01-21 18:51:21.972', '2022-01-21 18:51:21.972', 1, 1);
-INSERT INTO public.files (id, name, alternative_text, caption, width, height, formats, hash, ext, mime, size, url, preview_url, provider, provider_metadata, created_at, updated_at, created_by_id, updated_by_id) VALUES (5, '25.png', '25.png', '25.png', 96, 96, NULL, '25_e7e7b64273', '.png', 'image/png', 0.60, '/uploads/25_e7e7b64273.png', NULL, 'local', NULL, '2022-01-21 18:53:41.846', '2022-01-21 18:53:41.846', 1, 1);
-INSERT INTO public.files (id, name, alternative_text, caption, width, height, formats, hash, ext, mime, size, url, preview_url, provider, provider_metadata, created_at, updated_at, created_by_id, updated_by_id) VALUES (6, '37.png', '37.png', '37.png', 96, 96, NULL, '37_b795063d1b', '.png', 'image/png', 0.75, '/uploads/37_b795063d1b.png', NULL, 'local', NULL, '2022-01-21 18:56:01.092', '2022-01-21 18:56:01.092', 1, 1);
-INSERT INTO public.files (id, name, alternative_text, caption, width, height, formats, hash, ext, mime, size, url, preview_url, provider, provider_metadata, created_at, updated_at, created_by_id, updated_by_id) VALUES (7, '50.png', '50.png', '50.png', 96, 96, NULL, '50_9dd329a4c4', '.png', 'image/png', 0.44, '/uploads/50_9dd329a4c4.png', NULL, 'local', NULL, '2022-01-21 18:57:06.261', '2022-01-21 18:57:06.261', 1, 1);
-INSERT INTO public.files (id, name, alternative_text, caption, width, height, formats, hash, ext, mime, size, url, preview_url, provider, provider_metadata, created_at, updated_at, created_by_id, updated_by_id) VALUES (8, '54.png', '54.png', '54.png', 96, 96, NULL, '54_ea6a910821', '.png', 'image/png', 0.51, '/uploads/54_ea6a910821.png', NULL, 'local', NULL, '2022-01-21 18:59:08.559', '2022-01-21 18:59:08.559', 1, 1);
-INSERT INTO public.files (id, name, alternative_text, caption, width, height, formats, hash, ext, mime, size, url, preview_url, provider, provider_metadata, created_at, updated_at, created_by_id, updated_by_id) VALUES (9, '55.png', '55.png', '55.png', 96, 96, NULL, '55_bccf746ce4', '.png', 'image/png', 0.80, '/uploads/55_bccf746ce4.png', NULL, 'local', NULL, '2022-01-21 19:00:03.299', '2022-01-21 19:00:03.299', 1, 1);
-INSERT INTO public.files (id, name, alternative_text, caption, width, height, formats, hash, ext, mime, size, url, preview_url, provider, provider_metadata, created_at, updated_at, created_by_id, updated_by_id) VALUES (10, '67.png', '67.png', '67.png', 96, 96, NULL, '67_ba9e1a6dbf', '.png', 'image/png', 1.02, '/uploads/67_ba9e1a6dbf.png', NULL, 'local', NULL, '2022-01-21 19:01:24.615', '2022-01-21 19:01:24.615', 1, 1);
+INSERT INTO public.files (id, name, alternative_text, caption, width, height, formats, hash, ext, mime, size, url, preview_url, provider, provider_metadata, created_at, updated_at, created_by_id, updated_by_id) VALUES (23, '1.png', '1.png', '1.png', 396, 200, '{"thumbnail": {"ext": ".png", "url": "/uploads/thumbnail_1_67935c7750.png", "hash": "thumbnail_1_67935c7750", "mime": "image/png", "name": "thumbnail_1.png", "path": null, "size": 14.6, "width": 245, "height": 124}}', '1_67935c7750', '.png', 'image/png', 3.35, '/uploads/1_67935c7750.png', NULL, 'local', NULL, '2022-01-31 19:09:39.165', '2022-01-31 19:09:39.165', 1, 1);
+INSERT INTO public.files (id, name, alternative_text, caption, width, height, formats, hash, ext, mime, size, url, preview_url, provider, provider_metadata, created_at, updated_at, created_by_id, updated_by_id) VALUES (24, '7.png', '7.png', '7.png', 396, 200, '{"thumbnail": {"ext": ".png", "url": "/uploads/thumbnail_7_8477a37fd5.png", "hash": "thumbnail_7_8477a37fd5", "mime": "image/png", "name": "thumbnail_7.png", "path": null, "size": 16.43, "width": 245, "height": 124}}', '7_8477a37fd5', '.png', 'image/png', 3.38, '/uploads/7_8477a37fd5.png', NULL, 'local', NULL, '2022-01-31 19:09:39.169', '2022-01-31 19:09:39.169', 1, 1);
+INSERT INTO public.files (id, name, alternative_text, caption, width, height, formats, hash, ext, mime, size, url, preview_url, provider, provider_metadata, created_at, updated_at, created_by_id, updated_by_id) VALUES (25, '18.png', '18.png', '18.png', 396, 200, '{"thumbnail": {"ext": ".png", "url": "/uploads/thumbnail_18_29906049df.png", "hash": "thumbnail_18_29906049df", "mime": "image/png", "name": "thumbnail_18.png", "path": null, "size": 15.9, "width": 245, "height": 124}}', '18_29906049df', '.png', 'image/png', 4.30, '/uploads/18_29906049df.png', NULL, 'local', NULL, '2022-01-31 19:09:39.202', '2022-01-31 19:09:39.202', 1, 1);
+INSERT INTO public.files (id, name, alternative_text, caption, width, height, formats, hash, ext, mime, size, url, preview_url, provider, provider_metadata, created_at, updated_at, created_by_id, updated_by_id) VALUES (26, '13.png', '13.png', '13.png', 396, 200, '{"thumbnail": {"ext": ".png", "url": "/uploads/thumbnail_13_731cb968ed.png", "hash": "thumbnail_13_731cb968ed", "mime": "image/png", "name": "thumbnail_13.png", "path": null, "size": 11.21, "width": 245, "height": 124}}', '13_731cb968ed', '.png', 'image/png', 3.44, '/uploads/13_731cb968ed.png', NULL, 'local', NULL, '2022-01-31 19:09:39.21', '2022-01-31 19:09:39.21', 1, 1);
+INSERT INTO public.files (id, name, alternative_text, caption, width, height, formats, hash, ext, mime, size, url, preview_url, provider, provider_metadata, created_at, updated_at, created_by_id, updated_by_id) VALUES (27, '37.png', '37.png', '37.png', 396, 200, '{"thumbnail": {"ext": ".png", "url": "/uploads/thumbnail_37_bf38993797.png", "hash": "thumbnail_37_bf38993797", "mime": "image/png", "name": "thumbnail_37.png", "path": null, "size": 17.55, "width": 245, "height": 124}}', '37_bf38993797', '.png', 'image/png', 3.75, '/uploads/37_bf38993797.png', NULL, 'local', NULL, '2022-01-31 19:09:39.24', '2022-01-31 19:09:39.24', 1, 1);
+INSERT INTO public.files (id, name, alternative_text, caption, width, height, formats, hash, ext, mime, size, url, preview_url, provider, provider_metadata, created_at, updated_at, created_by_id, updated_by_id) VALUES (28, '25.png', '25.png', '25.png', 396, 200, '{"thumbnail": {"ext": ".png", "url": "/uploads/thumbnail_25_f5e0063bca.png", "hash": "thumbnail_25_f5e0063bca", "mime": "image/png", "name": "thumbnail_25.png", "path": null, "size": 13.01, "width": 245, "height": 124}}', '25_f5e0063bca', '.png', 'image/png', 3.65, '/uploads/25_f5e0063bca.png', NULL, 'local', NULL, '2022-01-31 19:09:39.241', '2022-01-31 19:09:39.241', 1, 1);
+INSERT INTO public.files (id, name, alternative_text, caption, width, height, formats, hash, ext, mime, size, url, preview_url, provider, provider_metadata, created_at, updated_at, created_by_id, updated_by_id) VALUES (29, '50.png', '50.png', '50.png', 396, 200, '{"thumbnail": {"ext": ".png", "url": "/uploads/thumbnail_50_c5933c4747.png", "hash": "thumbnail_50_c5933c4747", "mime": "image/png", "name": "thumbnail_50.png", "path": null, "size": 10.91, "width": 245, "height": 124}}', '50_c5933c4747', '.png', 'image/png', 3.06, '/uploads/50_c5933c4747.png', NULL, 'local', NULL, '2022-01-31 19:09:39.36', '2022-01-31 19:09:39.36', 1, 1);
+INSERT INTO public.files (id, name, alternative_text, caption, width, height, formats, hash, ext, mime, size, url, preview_url, provider, provider_metadata, created_at, updated_at, created_by_id, updated_by_id) VALUES (30, '54.png', '54.png', '54.png', 396, 200, '{"thumbnail": {"ext": ".png", "url": "/uploads/thumbnail_54_0ae405af1d.png", "hash": "thumbnail_54_0ae405af1d", "mime": "image/png", "name": "thumbnail_54.png", "path": null, "size": 13.34, "width": 245, "height": 124}}', '54_0ae405af1d', '.png', 'image/png', 3.36, '/uploads/54_0ae405af1d.png', NULL, 'local', NULL, '2022-01-31 19:09:39.361', '2022-01-31 19:09:39.361', 1, 1);
+INSERT INTO public.files (id, name, alternative_text, caption, width, height, formats, hash, ext, mime, size, url, preview_url, provider, provider_metadata, created_at, updated_at, created_by_id, updated_by_id) VALUES (31, '67.png', '67.png', '67.png', 396, 200, '{"thumbnail": {"ext": ".png", "url": "/uploads/thumbnail_67_731267bdab.png", "hash": "thumbnail_67_731267bdab", "mime": "image/png", "name": "thumbnail_67.png", "path": null, "size": 16.69, "width": 245, "height": 124}}', '67_731267bdab', '.png', 'image/png', 4.41, '/uploads/67_731267bdab.png', NULL, 'local', NULL, '2022-01-31 19:09:39.393', '2022-01-31 19:09:39.393', 1, 1);
+INSERT INTO public.files (id, name, alternative_text, caption, width, height, formats, hash, ext, mime, size, url, preview_url, provider, provider_metadata, created_at, updated_at, created_by_id, updated_by_id) VALUES (32, '55.png', '55.png', '55.png', 396, 200, '{"thumbnail": {"ext": ".png", "url": "/uploads/thumbnail_55_ba9f2163b4.png", "hash": "thumbnail_55_ba9f2163b4", "mime": "image/png", "name": "thumbnail_55.png", "path": null, "size": 16.86, "width": 245, "height": 124}}', '55_ba9f2163b4', '.png', 'image/png', 3.99, '/uploads/55_ba9f2163b4.png', NULL, 'local', NULL, '2022-01-31 19:09:39.398', '2022-01-31 19:09:39.398', 1, 1);
 
 
 --
@@ -1025,16 +1048,16 @@ INSERT INTO public.files (id, name, alternative_text, caption, width, height, fo
 -- Data for Name: files_related_morphs; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public.files_related_morphs (file_id, related_id, related_type, field, "order") VALUES (1, 1, 'api::pokemon.pokemon', 'image', 1);
-INSERT INTO public.files_related_morphs (file_id, related_id, related_type, field, "order") VALUES (2, 2, 'api::pokemon.pokemon', 'image', 1);
-INSERT INTO public.files_related_morphs (file_id, related_id, related_type, field, "order") VALUES (3, 3, 'api::pokemon.pokemon', 'image', 1);
-INSERT INTO public.files_related_morphs (file_id, related_id, related_type, field, "order") VALUES (4, 4, 'api::pokemon.pokemon', 'image', 1);
-INSERT INTO public.files_related_morphs (file_id, related_id, related_type, field, "order") VALUES (5, 5, 'api::pokemon.pokemon', 'image', 1);
-INSERT INTO public.files_related_morphs (file_id, related_id, related_type, field, "order") VALUES (6, 6, 'api::pokemon.pokemon', 'image', 1);
-INSERT INTO public.files_related_morphs (file_id, related_id, related_type, field, "order") VALUES (7, 7, 'api::pokemon.pokemon', 'image', 1);
-INSERT INTO public.files_related_morphs (file_id, related_id, related_type, field, "order") VALUES (8, 8, 'api::pokemon.pokemon', 'image', 1);
-INSERT INTO public.files_related_morphs (file_id, related_id, related_type, field, "order") VALUES (9, 9, 'api::pokemon.pokemon', 'image', 1);
-INSERT INTO public.files_related_morphs (file_id, related_id, related_type, field, "order") VALUES (10, 10, 'api::pokemon.pokemon', 'image', 1);
+INSERT INTO public.files_related_morphs (file_id, related_id, related_type, field, "order") VALUES (23, 1, 'api::pokemon.pokemon', 'image', 1);
+INSERT INTO public.files_related_morphs (file_id, related_id, related_type, field, "order") VALUES (29, 7, 'api::pokemon.pokemon', 'image', 1);
+INSERT INTO public.files_related_morphs (file_id, related_id, related_type, field, "order") VALUES (32, 9, 'api::pokemon.pokemon', 'image', 1);
+INSERT INTO public.files_related_morphs (file_id, related_id, related_type, field, "order") VALUES (31, 10, 'api::pokemon.pokemon', 'image', 1);
+INSERT INTO public.files_related_morphs (file_id, related_id, related_type, field, "order") VALUES (25, 4, 'api::pokemon.pokemon', 'image', 1);
+INSERT INTO public.files_related_morphs (file_id, related_id, related_type, field, "order") VALUES (28, 5, 'api::pokemon.pokemon', 'image', 1);
+INSERT INTO public.files_related_morphs (file_id, related_id, related_type, field, "order") VALUES (30, 8, 'api::pokemon.pokemon', 'image', 1);
+INSERT INTO public.files_related_morphs (file_id, related_id, related_type, field, "order") VALUES (24, 2, 'api::pokemon.pokemon', 'image', 1);
+INSERT INTO public.files_related_morphs (file_id, related_id, related_type, field, "order") VALUES (27, 6, 'api::pokemon.pokemon', 'image', 1);
+INSERT INTO public.files_related_morphs (file_id, related_id, related_type, field, "order") VALUES (26, 3, 'api::pokemon.pokemon', 'image', 1);
 
 
 --
@@ -1052,16 +1075,16 @@ INSERT INTO public.i18n_locale (id, name, code, created_at, updated_at, created_
 -- Data for Name: pokemons; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public.pokemons (id, title, movies, id_pokemon, height, attack, created_at, updated_at, published_at, created_by_id, updated_by_id) VALUES (1, 'Bulbasaur', 78, 1, 7, 49, '2022-01-21 18:36:08.336', '2022-01-21 18:36:10.149', '2022-01-21 18:36:10.145', 1, 1);
-INSERT INTO public.pokemons (id, title, movies, id_pokemon, height, attack, created_at, updated_at, published_at, created_by_id, updated_by_id) VALUES (2, 'Squirtle', 91, 7, 5, 48, '2022-01-21 18:46:49.223', '2022-01-21 18:46:50.064', '2022-01-21 18:46:50.062', 1, 1);
-INSERT INTO public.pokemons (id, title, movies, id_pokemon, height, attack, created_at, updated_at, published_at, created_by_id, updated_by_id) VALUES (3, 'Weedle', 35, 13, 3, 35, '2022-01-21 18:49:31.574', '2022-01-21 18:49:32.239', '2022-01-21 18:49:32.237', 1, 1);
-INSERT INTO public.pokemons (id, title, movies, id_pokemon, height, attack, created_at, updated_at, published_at, created_by_id, updated_by_id) VALUES (4, 'Pidgeot', 61, 18, 15, 80, '2022-01-21 18:51:24.601', '2022-01-21 18:51:25.515', '2022-01-21 18:51:25.514', 1, 1);
-INSERT INTO public.pokemons (id, title, movies, id_pokemon, height, attack, created_at, updated_at, published_at, created_by_id, updated_by_id) VALUES (5, 'Pikachu', 81, 25, 4, 55, '2022-01-21 18:53:45.964', '2022-01-21 18:53:47.044', '2022-01-21 18:53:47.042', 1, 1);
-INSERT INTO public.pokemons (id, title, movies, id_pokemon, height, attack, created_at, updated_at, published_at, created_by_id, updated_by_id) VALUES (6, 'Vulpix', 73, 37, 6, 41, '2022-01-21 18:56:03.189', '2022-01-21 18:56:04.177', '2022-01-21 18:56:04.175', 1, 1);
-INSERT INTO public.pokemons (id, title, movies, id_pokemon, height, attack, created_at, updated_at, published_at, created_by_id, updated_by_id) VALUES (7, 'Diglett', 64, 50, 2, 55, '2022-01-21 18:57:15.499', '2022-01-21 18:57:17.006', '2022-01-21 18:57:17.004', 1, 1);
-INSERT INTO public.pokemons (id, title, movies, id_pokemon, height, attack, created_at, updated_at, published_at, created_by_id, updated_by_id) VALUES (8, 'Psyduck', 99, 54, 8, 52, '2022-01-21 18:59:11.928', '2022-01-21 18:59:13.321', '2022-01-21 18:59:13.318', 1, 1);
-INSERT INTO public.pokemons (id, title, movies, id_pokemon, height, attack, created_at, updated_at, published_at, created_by_id, updated_by_id) VALUES (10, 'Machoke', 84, 67, 15, 100, '2022-01-21 19:01:28.025', '2022-01-21 19:01:28.589', '2022-01-21 19:01:28.585', 1, 1);
-INSERT INTO public.pokemons (id, title, movies, id_pokemon, height, attack, created_at, updated_at, published_at, created_by_id, updated_by_id) VALUES (9, 'Golduck', 95, 55, 17, 82, '2022-01-21 19:00:05.291', '2022-01-21 19:01:49.145', '2022-01-21 19:01:49.142', 1, 1);
+INSERT INTO public.pokemons (id, title, movies, id_pokemon, height, attack, created_at, updated_at, published_at, created_by_id, updated_by_id) VALUES (1, 'Bulbasaur', 78, 1, 7, 49, '2022-01-21 18:36:08.336', '2022-01-31 19:09:52.098', '2022-01-21 18:36:10.145', 1, 1);
+INSERT INTO public.pokemons (id, title, movies, id_pokemon, height, attack, created_at, updated_at, published_at, created_by_id, updated_by_id) VALUES (7, 'Diglett', 64, 50, 2, 55, '2022-01-21 18:57:15.499', '2022-01-31 19:09:58.594', '2022-01-21 18:57:17.004', 1, 1);
+INSERT INTO public.pokemons (id, title, movies, id_pokemon, height, attack, created_at, updated_at, published_at, created_by_id, updated_by_id) VALUES (9, 'Golduck', 95, 55, 17, 82, '2022-01-21 19:00:05.291', '2022-01-31 19:10:04.44', '2022-01-21 19:01:49.142', 1, 1);
+INSERT INTO public.pokemons (id, title, movies, id_pokemon, height, attack, created_at, updated_at, published_at, created_by_id, updated_by_id) VALUES (10, 'Machoke', 84, 67, 15, 100, '2022-01-21 19:01:28.025', '2022-01-31 19:10:10.658', '2022-01-21 19:01:28.585', 1, 1);
+INSERT INTO public.pokemons (id, title, movies, id_pokemon, height, attack, created_at, updated_at, published_at, created_by_id, updated_by_id) VALUES (4, 'Pidgeot', 61, 18, 15, 80, '2022-01-21 18:51:24.601', '2022-01-31 19:10:18.068', '2022-01-21 18:51:25.514', 1, 1);
+INSERT INTO public.pokemons (id, title, movies, id_pokemon, height, attack, created_at, updated_at, published_at, created_by_id, updated_by_id) VALUES (5, 'Pikachu', 81, 25, 4, 55, '2022-01-21 18:53:45.964', '2022-01-31 19:10:23.68', '2022-01-21 18:53:47.042', 1, 1);
+INSERT INTO public.pokemons (id, title, movies, id_pokemon, height, attack, created_at, updated_at, published_at, created_by_id, updated_by_id) VALUES (8, 'Psyduck', 99, 54, 8, 52, '2022-01-21 18:59:11.928', '2022-01-31 19:10:31.101', '2022-01-21 18:59:13.318', 1, 1);
+INSERT INTO public.pokemons (id, title, movies, id_pokemon, height, attack, created_at, updated_at, published_at, created_by_id, updated_by_id) VALUES (2, 'Squirtle', 91, 7, 5, 48, '2022-01-21 18:46:49.223', '2022-01-31 19:10:39.785', '2022-01-21 18:46:50.062', 1, 1);
+INSERT INTO public.pokemons (id, title, movies, id_pokemon, height, attack, created_at, updated_at, published_at, created_by_id, updated_by_id) VALUES (6, 'Vulpix', 73, 37, 6, 41, '2022-01-21 18:56:03.189', '2022-01-31 19:10:46.484', '2022-01-21 18:56:04.175', 1, 1);
+INSERT INTO public.pokemons (id, title, movies, id_pokemon, height, attack, created_at, updated_at, published_at, created_by_id, updated_by_id) VALUES (3, 'Weedle', 35, 13, 3, 35, '2022-01-21 18:49:31.574', '2022-01-31 19:10:54.656', '2022-01-21 18:49:32.237', 1, 1);
 
 
 --
@@ -1186,7 +1209,7 @@ INSERT INTO public.up_roles (id, name, description, type, created_at, updated_at
 
 
 --
--- TOC entry 3540 (class 0 OID 0)
+-- TOC entry 3541 (class 0 OID 0)
 -- Dependencies: 217
 -- Name: admin_permissions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -1195,7 +1218,7 @@ SELECT pg_catalog.setval('public.admin_permissions_id_seq', 63, true);
 
 
 --
--- TOC entry 3541 (class 0 OID 0)
+-- TOC entry 3542 (class 0 OID 0)
 -- Dependencies: 221
 -- Name: admin_roles_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -1204,7 +1227,7 @@ SELECT pg_catalog.setval('public.admin_roles_id_seq', 3, true);
 
 
 --
--- TOC entry 3542 (class 0 OID 0)
+-- TOC entry 3543 (class 0 OID 0)
 -- Dependencies: 219
 -- Name: admin_users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -1213,16 +1236,16 @@ SELECT pg_catalog.setval('public.admin_users_id_seq', 1, true);
 
 
 --
--- TOC entry 3543 (class 0 OID 0)
+-- TOC entry 3544 (class 0 OID 0)
 -- Dependencies: 225
 -- Name: files_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.files_id_seq', 10, true);
+SELECT pg_catalog.setval('public.files_id_seq', 32, true);
 
 
 --
--- TOC entry 3544 (class 0 OID 0)
+-- TOC entry 3545 (class 0 OID 0)
 -- Dependencies: 233
 -- Name: i18n_locale_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -1231,7 +1254,7 @@ SELECT pg_catalog.setval('public.i18n_locale_id_seq', 1, true);
 
 
 --
--- TOC entry 3545 (class 0 OID 0)
+-- TOC entry 3546 (class 0 OID 0)
 -- Dependencies: 240
 -- Name: pokemons_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -1240,7 +1263,7 @@ SELECT pg_catalog.setval('public.pokemons_id_seq', 10, true);
 
 
 --
--- TOC entry 3546 (class 0 OID 0)
+-- TOC entry 3547 (class 0 OID 0)
 -- Dependencies: 223
 -- Name: strapi_api_tokens_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -1249,7 +1272,7 @@ SELECT pg_catalog.setval('public.strapi_api_tokens_id_seq', 1, true);
 
 
 --
--- TOC entry 3547 (class 0 OID 0)
+-- TOC entry 3548 (class 0 OID 0)
 -- Dependencies: 213
 -- Name: strapi_core_store_settings_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -1258,7 +1281,7 @@ SELECT pg_catalog.setval('public.strapi_core_store_settings_id_seq', 17, true);
 
 
 --
--- TOC entry 3548 (class 0 OID 0)
+-- TOC entry 3549 (class 0 OID 0)
 -- Dependencies: 211
 -- Name: strapi_database_schema_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -1267,7 +1290,7 @@ SELECT pg_catalog.setval('public.strapi_database_schema_id_seq', 2, true);
 
 
 --
--- TOC entry 3549 (class 0 OID 0)
+-- TOC entry 3550 (class 0 OID 0)
 -- Dependencies: 209
 -- Name: strapi_migrations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -1276,7 +1299,7 @@ SELECT pg_catalog.setval('public.strapi_migrations_id_seq', 1, false);
 
 
 --
--- TOC entry 3550 (class 0 OID 0)
+-- TOC entry 3551 (class 0 OID 0)
 -- Dependencies: 215
 -- Name: strapi_webhooks_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -1285,7 +1308,7 @@ SELECT pg_catalog.setval('public.strapi_webhooks_id_seq', 1, false);
 
 
 --
--- TOC entry 3551 (class 0 OID 0)
+-- TOC entry 3552 (class 0 OID 0)
 -- Dependencies: 227
 -- Name: up_permissions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -1294,7 +1317,7 @@ SELECT pg_catalog.setval('public.up_permissions_id_seq', 15, true);
 
 
 --
--- TOC entry 3552 (class 0 OID 0)
+-- TOC entry 3553 (class 0 OID 0)
 -- Dependencies: 229
 -- Name: up_roles_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -1303,7 +1326,7 @@ SELECT pg_catalog.setval('public.up_roles_id_seq', 2, true);
 
 
 --
--- TOC entry 3553 (class 0 OID 0)
+-- TOC entry 3554 (class 0 OID 0)
 -- Dependencies: 231
 -- Name: up_users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
@@ -1930,7 +1953,7 @@ ALTER TABLE ONLY public.up_users
     ADD CONSTRAINT up_users_updated_by_id_fk FOREIGN KEY (updated_by_id) REFERENCES public.admin_users(id) ON DELETE SET NULL;
 
 
--- Completed on 2022-01-26 01:03:20
+-- Completed on 2022-01-31 19:27:46
 
 --
 -- PostgreSQL database dump complete
