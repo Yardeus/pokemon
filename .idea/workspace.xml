@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7cff24a5-7862-4498-8396-7dc4739f280e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.strapi-updater.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.strapi-updater.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/index.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +67,7 @@
       <workItem from="1643131122272" duration="16679000" />
       <workItem from="1643188328921" duration="13284000" />
       <workItem from="1643280985199" duration="15935000" />
-      <workItem from="1643625155154" duration="9473000" />
+      <workItem from="1643625155154" duration="10756000" />
     </task>
     <servers />
   </component>
